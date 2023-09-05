@@ -1,975 +1,1051 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Acciojob clone</title>
-        <link rel="stylesheet" href="style.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossorigin="anonymous"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everything deliverd in minutes</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="img/icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/2/2a/Blinkit-yellow-rounded.svg"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="my-nav">
+      
+        <a class="BlinkitLogo__LogoContainer-sc-xocpjl-0 jzxMvs" href="/"
+          ><svg
+            width="134"
+            height="30"
+            viewBox="0 0 114 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.3342 7.186C16.2619 7.186 17.9832 7.66644 19.4978 8.62732C21.0262 9.57447 22.2242 10.9197 23.0917 12.663C23.9316 14.3377 24.3516 16.3075 24.3516 18.5724C24.3516 20.7687 23.9316 22.7316 23.0917 24.4612C22.2517 26.1908 21.0675 27.5429 19.5391 28.5175C17.9969 29.5058 16.2619 30 14.3342 30C12.9297 30 11.6078 29.7117 10.3685 29.1352C9.12927 28.5587 8.06901 27.7488 7.18775 26.7056V29.4852H0V0H7.18775V10.4598C8.06901 9.41661 9.12927 8.61359 10.3685 8.05079C11.6078 7.47426 12.9297 7.186 14.3342 7.186ZM12.1861 24.0494C13.2051 24.0494 14.1139 23.8161 14.9125 23.3493C15.7112 22.8826 16.3377 22.2306 16.7921 21.3933C17.2465 20.5697 17.4737 19.6294 17.4737 18.5724C17.4737 17.5429 17.2465 16.6095 16.7921 15.7721C16.3377 14.9348 15.7112 14.2828 14.9125 13.8161C14.1139 13.3493 13.2051 13.116 12.1861 13.116C11.2223 13.116 10.3617 13.3493 9.60432 13.8161C8.84699 14.269 8.2549 14.9073 7.82804 15.731C7.40118 16.5683 7.18775 17.5154 7.18775 18.5724C7.18775 19.6294 7.40118 20.5765 7.82804 21.4139C8.2549 22.2375 8.84699 22.8826 9.60432 23.3493C10.3617 23.8161 11.2223 24.0494 12.1861 24.0494Z"
+              fill="#F8CB46"
+            ></path>
+            <path
+              d="M25.3356 29.4852V0H32.5233V29.4852H25.3356Z"
+              fill="#F8CB46"
+            ></path>
+            <path
+              d="M34.5607 29.4852V7.68016H41.7071V29.4852H34.5607Z"
+              fill="#F8CB46"
+            ></path>
+            <path
+              d="M57.2319 7.186C58.7603 7.186 60.1372 7.5429 61.3627 8.25669C62.5882 8.95676 63.5521 9.94509 64.2544 11.2217C64.9291 12.512 65.2664 13.9739 65.2664 15.6074V29.4852H58.4092V17.2135C58.4092 16.4173 58.2508 15.7104 57.9341 15.0927C57.6312 14.4612 57.1974 13.9739 56.6329 13.6307C56.0821 13.2876 55.4349 13.116 54.6914 13.116C53.9891 13.116 53.3419 13.2876 52.7498 13.6307C52.1577 13.9602 51.6965 14.4132 51.366 14.9897C51.0218 15.5388 50.8496 16.1839 50.8496 16.9252L50.8083 29.4852H43.6619V7.68016H50.8083V10.1716C51.483 9.23816 52.3849 8.51064 53.5141 7.98902C54.6432 7.45367 55.8824 7.186 57.2319 7.186Z"
+              fill="#F8CB46"
+            ></path>
+            <path
+              d="M81.0597 17.2135L89.1769 29.4852H81.0597L76.3091 21.7639L74.1198 24.2965V29.4852H66.932V0H74.1198V16.2869L81.0184 7.68016H89.1356L81.0597 17.2135Z"
+              fill="#F8CB46"
+            ></path>
+            <path
+              d="M34.5569 0.00232667H41.7267V5.59207H34.5569V0.00232667Z"
+              fill="#F8CB46"
+            ></path>
+            <path
+              d="M90.3176 29.4198V7.61479H97.464V29.4198H90.3176Z"
+              fill="#54B226"
+            ></path>
+            <path
+              d="M112.575 23.2634L114 27.855C113.353 28.4727 112.534 28.9737 111.542 29.3581C110.564 29.7424 109.607 29.9346 108.671 29.9346C107.322 29.9346 106.117 29.6395 105.057 29.0492C103.996 28.4452 103.17 27.6079 102.578 26.5372C101.986 25.494 101.69 24.2929 101.69 22.9339V13.3183H98.819V7.61479H101.69V0.00241089H108.547V7.61479H113.071V13.3183H108.547V21.6161C108.547 22.3162 108.733 22.8859 109.105 23.3251C109.477 23.7644 109.952 23.984 110.53 23.984C110.943 23.984 111.329 23.9223 111.687 23.7987C112.045 23.6752 112.341 23.4967 112.575 23.2634Z"
+              fill="#54B226"
+            ></path>
+            <path
+              d="M90.2609 0.00241089H97.4307V5.59215H90.2609V0.00241089Z"
+              fill="#54B226"
+            ></path></svg>
+        </a>
+      
+      <div class="vertical-line"></div>
+      <div class="my-address">
+        <h3 class="my-address-1">Delivery in 8 minutes</h3>
+        <h6 class="my-address-2">
+          New Delhi,India <i class="fa-solid fa-caret-down"></i>
+        </h6>
+      </div>
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          class="search-bar-main"
+          type="text"
+          placeholder="Search 'butter'"
         />
-    </head>
-    <body>
-        <nav class="main-nav">
-            <div class="nav-logo-cert">
-                <div class="nav-logo-accio">
-                    <img
-                        class="nav-logo"
-                        src="./assets/Final Logo.svg"
-                        alt=""
-                    />
-                    <span class="nav-Accio">AccioJob</span>
-                </div>
-                <div class="line"></div>
-                <img
-                    class="nav-cert"
-                    src="./assets/NSDC_Logo_in_clear_background 1.png"
-                    alt=""
-                />
+      </div>
+      <button class="log-button but-1" type="Login">Login</button>
+      <button class="cart-button but-1" type="My cart">
+        <i class="fa-solid fa-cart-shopping"></i> My cart
+      </button>
+    </nav>
+    <section
+      class="hero-section d-flex justify-content-center align-items-center"
+    >
+      <img
+        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=1440/layout-engine/2022-05/Group-33704.jpg"
+        alt="paan corner banner"
+        width="1280"
+        height="234.8623853211009"
+        loading="eager"
+        style="border-radius: 0px; object-fit: fill; cursor: default"
+      />
+    </section>
+    <section class="cards-head">
+      <div class="cards-1">
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-08/Web-HFS-banner_0.png"
+          alt="masthead_web_hfs_sept"
+          width="335.40000000000003"
+          height="195"
+          loading="lazy"
+          style="border-radius: 16px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-03/beauty-WEB.jpg"
+          alt="masthead_web_beauty_store"
+          width="335.40000000000003"
+          height="195"
+          loading="lazy"
+          style="border-radius: 16px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-07/electronics-WEB.jpg"
+          alt="masthead_web_electronic_store"
+          width="335.40000000000003"
+          height="195"
+          loading="lazy"
+          style="border-radius: 16px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-07/pharmacy-WEB.jpg"
+          alt="masthead_web_pharma"
+          width="335.40000000000003"
+          height="195"
+          loading="lazy"
+          style="border-radius: 16px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-07/print_crystal_WEB_0.jpg"
+          alt="pb_printout_service_web"
+          width="335.40000000000003"
+          height="195"
+          loading="lazy"
+          style="border-radius: 16px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-03/babycare-WEB.jpg"
+          alt="masthead_web_baby_care"
+          width="335.40000000000003"
+          height="195"
+          loading="lazy"
+          style="border-radius: 16px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-07/Pet-Care_WEB.jpg"
+          alt="masthead_web_pet_care"
+          width="335.40000000000003"
+          height="195"
+          loading="lazy"
+          style="border-radius: 16px; object-fit: fill; cursor: default"
+        />
+      </div>
+    </section>
+    <section class="fruits-section">
+      <div class="fruits-section-1">
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png"
+          alt="2 - Dairy, Bread &amp; Eggs"
+          width="128"
+          height="188.23529411764704"
+          loading="lazy"
+          style="border-radius: 0px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-3_9.png"
+          alt="3 - Fruits &amp; Vegetables"
+          width="128"
+          height="188.23529411764704"
+          loading="lazy"
+          style="border-radius: 0px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-4_9.png"
+          alt="4 - Cold Drinks &amp; Juices "
+          width="128"
+          height="188.23529411764704"
+          loading="lazy"
+          style="border-radius: 0px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-5_4.png"
+          alt="5 - Snacks &amp; Munchies "
+          width="128"
+          height="188.23529411764704"
+          loading="lazy"
+          style="border-radius: 0px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-7_3.png"
+          alt="7 - Sweet Tooth"
+          width="128"
+          height="188.23529411764704"
+          loading="lazy"
+          style="border-radius: 0px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-8_4.png"
+          alt="8 - Bakery &amp; Biscuits"
+          width="128"
+          height="188.23529411764704"
+          loading="lazy"
+          style="border-radius: 0px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-10.png"
+          alt="10 - Atta, Rice &amp; Dal"
+          width="128"
+          height="188.23529411764704"
+          loading="lazy"
+          style="border-radius: 0px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png"
+          alt="2 - Dairy, Bread &amp; Eggs"
+          width="128"
+          height="188.23529411764704"
+          loading="lazy"
+          style="border-radius: 0px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-16.png"
+          alt="16 - Pharma &amp; Wellness"
+          width="128"
+          height="188.23529411764704"
+          loading="lazy"
+          style="border-radius: 0px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-18.png"
+          alt="18 - Home &amp; Office "
+          width="128"
+          height="188.23529411764704"
+          loading="lazy"
+          style="border-radius: 0px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png"
+          alt="2 - Dairy, Bread &amp; Eggs"
+          width="128"
+          height="188.23529411764704"
+          loading="lazy"
+          style="border-radius: 0px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-7_3.png"
+          alt="7 - Sweet Tooth"
+          width="128"
+          height="188.23529411764704"
+          loading="lazy"
+          style="border-radius: 0px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png"
+          alt="2 - Dairy, Bread &amp; Eggs"
+          width="128"
+          height="188.23529411764704"
+          loading="lazy"
+          style="border-radius: 0px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-11.png"
+          alt="11 - Masala, Oil &amp; More "
+          width="128"
+          height="188.23529411764704"
+          loading="lazy"
+          style="border-radius: 0px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png"
+          alt="2 - Dairy, Bread &amp; Eggs"
+          width="128"
+          height="188.23529411764704"
+          loading="lazy"
+          style="border-radius: 0px; object-fit: fill; cursor: default"
+        /><img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-4_9.png"
+          alt="4 - Cold Drinks &amp; Juices "
+          width="128"
+          height="188.23529411764704"
+          loading="lazy"
+          style="border-radius: 0px; object-fit: fill; cursor: default"
+        /><img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png"
+          alt="2 - Dairy, Bread &amp; Eggs"
+          width="128"
+          height="188.23529411764704"
+          loading="lazy"
+          style="border-radius: 0px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-7_3.png"
+          alt="7 - Sweet Tooth"
+          width="128"
+          height="188.23529411764704"
+          loading="lazy"
+          style="border-radius: 0px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-8_4.png"
+          alt="8 - Bakery &amp; Biscuits"
+          width="128"
+          height="188.23529411764704"
+          loading="lazy"
+          style="border-radius: 0px; object-fit: fill; cursor: default"
+        />
+        <img
+          src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-10.png"
+          alt="10 - Atta, Rice &amp; Dal"
+          width="128"
+          height="188.23529411764704"
+          loading="lazy"
+          style="border-radius: 0px; object-fit: fill; cursor: default"
+        />
+      </div>
+    </section>
+    <section class="product-card-main">
+      <div class="text-one">Diary,Bread & Eggs</div>
+      <div class="product-list">
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-card-main">
+      <div class="text-one">Diary,Bread & Eggs</div>
+      <div class="product-list">
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-card-main">
+      <div class="text-one">Diary,Bread & Eggs</div>
+      <div class="product-list">
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913"
+            alt="Mother Dairy Classic Curd"
+            width="140"
+            height="140"
+            loading="lazy"
+            style="border-radius: 0px; object-fit: fill; cursor: default"
+          />
+          <p class="product-time">
+            <i class="fa-solid fa-stopwatch"></i>8 MINS
+          </p>
+          <p class="card-title">Mother Dairy Curd Classic</p>
+          <p>400g</p>
+          <div class="product-cost">
+            <p class="rupees">₹34</p>
+            <button class="mb-2">ADD</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="">
+      <div class="row-1 mx-4">
+        <div class="names-1">
+          <div class="usefull-links">
+            <h4>Usefull Links</h4>
+            <table>
+              <tr>
+                <td>About</td>
+                <td>privacy</td>
+                <td>Partner</td>
+              </tr>
+              <tr>
+                <td>About</td>
+                <td>privacy</td>
+                <td>Partner</td>
+              </tr>
+              <tr>
+                <td>About</td>
+                <td>privacy</td>
+                <td>Partner</td>
+              </tr>
+              <tr>
+                <td>About</td>
+                <td>privacy</td>
+                <td>Partner</td>
+              </tr>
+              <tr>
+                <td>About</td>
+                <td>privacy</td>
+                <td>Partner</td>
+              </tr>
+              <tr>
+                <td>About</td>
+                <td>privacy</td>
+                <td>Partner</td>
+              </tr>
+            </table>
+          </div>
+          <div class="categories-1">
+            <h4>categories<a href="#" class="see-all fs-5"> See all</a></h4>
+            <table>
+              <tr>
+                <td>Vegetables & Fruits</td>
+                <td>Dairy & Breakfast</td>
+                <td>Munchies</td>
+              </tr>
+              <tr>
+                <td>Vegetables & Fruits</td>
+                <td>Dairy & Breakfast</td>
+                <td>Munchies</td>
+              </tr>
+              <tr>
+                <td>Vegetables & Fruits</td>
+                <td>Dairy & Breakfast</td>
+                <td>Munchies</td>
+              </tr>
+              <tr>
+                <td>Vegetables & Fruits</td>
+                <td>Dairy & Breakfast</td>
+                <td>Munchies</td>
+              </tr>
+              <tr>
+                <td>Vegetables & Fruits</td>
+                <td>Dairy & Breakfast</td>
+                <td>Munchies</td>
+              </tr>
+              <tr>
+                <td>Vegetables & Fruits</td>
+                <td>Dairy & Breakfast</td>
+                <td>Munchies</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row-2 d-flex justify-content-center align-items-center">
+        <div class="star-1">
+          <p class="p-content">
+            © Blink Commerce Private Limited (formerly known as Grofers India
+            Private Limited), 2016-2023
+          </p>
+          <div
+            class="app-content d-flex justify-content-center align-items-center"
+          >
+            <p class="download-1">Download App</p>
+            <button class="click-blue">
+              <i class="fa-brands fa-apple" style="color: #f7f9fd"></i> App
+              store
+            </button>
+            <button class="click-blue">Google play</button>
+          </div>
+          <div
+            class="social-content d-flex justify-content-center align-items-center"
+          >
+            <div class="social-media">
+              <i class="fa-brands fa-instagram" style="color: #fafafa"></i>
             </div>
-            <div class="nav-links">
-                <div class="nav-section">
-                    <div>
-                        <a href="" class="nav-text">Courses</a>
-                        <img src="./assets/Arrow.svg" alt="" />
-                    </div>
-                    <a class="nav-text" href="">Accio Reviews</a>
-                    <a class="nav-text" href="">Scholership Test</a>
-                    <div>
-                        <a class="nav-text" href="">More</a>
-                        <img src="./assets/Arrow.svg" alt="" />
-                    </div>
-                </div>
-                <div class="nav-search-button">
-                    <button class="nav-button-login">Login</button>
-                </div>
+            <div class="social-media">
+              <i class="fa-brands fa-twitter" style="color: #fcfcfd"></i>
             </div>
-        </nav>
-        <section class="announcement">
-            <span class="announcement-text"
-                >Next batch starts in ⌛ 22 Days, Hurry! ️</span
-            >
-        </section>
-        <section class="hero-section">
-            <div class="hero-main">
-                <div class="hero-main-text">
-                    <div class="hero-main-text-primary">
-                        <div class="hero-main-text-primary-first">
-                            Launch your career with our
-                        </div>
-                        <div class="hero-main-text-primary-second">
-                            <div class="hero-main-text-primary-second-cources">
-                                <span class="hero-main-text-primary-second-full"
-                                    >Full Stack Developer </span
-                                >Courses
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hero-main-text-secondary">
-                        Curriculum designed and taught by Alumni from IIT’s &
-                        Leading Tech Companies.
-                    </div>
-                </div>
-                <div class="hero-features">
-                    <div class="hero-features-components">
-                        <img src="./assets/Group 907.png" alt="" />
-                        <div>
-                            <span class="hero-features-components-upper">
-                                41 Lakhs
-                            </span>
-                            <span class="hero-features-components-lower">
-                                Highest Salary
-                            </span>
-                        </div>
-                    </div>
-                    <div class="hero-features-components">
-                        <img src="./assets/Group 48097592.svg" alt="" />
-                        <div>
-                            <span class="hero-features-components-upper">
-                                300+
-                            </span>
-                            <div class="hero-features-components-lower">
-                                Partner Companies
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hero-features-components">
-                        <img src="./assets/Group 903.png" alt="" />
-                        <div>
-                            <span class="hero-features-components-upper"
-                                >100%</span
-                            >
-                            <div class="hero-features-components-lower">
-                                Job Guarantee
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hero-features-components">
-                        <img src="./assets/Group 48097591.svg" alt="" />
-                        <div>
-                            <span class="hero-features-components-upper"
-                                >8.3 LPA</span
-                            >
-                            <div class="hero-features-components-lower">
-                                Average Salary
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-madeby">
-                    <div class="hero-madeby-text">
-                        Made with 💙 by an AccioJob Student
-                    </div>
-                </div>
+            <div class="social-media">
+              <i class="fa-brands fa-facebook-f" style="color: #f7f7f8"></i>
             </div>
-            <div class="hero-form">
-                <div class="hero-form-frame">
-                    <div class="hero-form-shadow"></div>
-                    <div class="hero-form-frame-section1">
-                        <div class="hero-form-frame-section1-upper">
-                            Start Attending Live Classes for Free!
-                        </div>
-                        <div class="hero-form-frame-section1-lower">
-                            Live lectures & Assignments curated by Top Tech
-                            Proffesionals
-                        </div>
-                    </div>
-                    <div class="hero-form-frame-section2">
-                        <form class="hero-form-frame-section2-form" action="">
-                            <input
-                                class="hero-form-frame-section2-1"
-                                type="text"
-                                id="fname"
-                                name="fname"
-                                placeholder="Samvrant Samantaray"
-                            /><br />
+            <div class="social-media">
+              <i class="fa-brands fa-linkedin-in" style="color: #ffffff"></i>
+            </div>
+            <div class="social-media">
+              <i class="fa-brands fa-threads" style="color: #ffffff"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row-3">
 
-                            <input
-                                class="hero-form-frame-section2-1"
-                                type="text"
-                                id="lname"
-                                name="lname"
-                                placeholder="Phone number"
-                            />
-                            <button class="hero-form-frame-section2-button">
-                                Apply Now For Free
-                            </button>
-                        </form>
-                        <div class="hero-form-frame-section2-2">
-                            By clicking ‘Apply now’, you agree to our
-                            <span class="hero-form-frame-section2-term"
-                                >Terms & Conditions</span
-                            >
-                        </div>
-                    </div>
-                    <div class="hero-form-frame-section3"></div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="element-course-we-offer">
-                <div class="title">
-                    <div class="learn-full-stack-web">
-                        LEARN FULL-STACK WEB DEVELOPMENT
-                    </div>
-                    <div class="text-wrapper">OUR COURSES</div>
-                </div>
-                <div class="course-cards">
-                    <div class="sapling-card">
-                        <div class="tag">
-                            <div class="recommended-for">
-                                IDEAL FOR FIRST-TIME CODERS
-                            </div>
-                        </div>
-                        <div class="details">
-                            <div class="frame">
-                                <div class="div">
-                                    <img
-                                        class="img"
-                                        src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/frame-12.svg"
-                                    />
-                                    <div class="text-wrapper-2">
-                                        Placement Starts
-                                    </div>
-                                </div>
-                                <div class="text-wrapper-3">in 4 Months</div>
-                            </div>
-                            <img
-                                class="line"
-                                src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/line-2-5.svg"
-                            />
-                            <div class="frame">
-                                <div class="frame-2">
-                                    <img
-                                        class="img-2"
-                                        src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/mdi-graduation-cap-outline-5.svg"
-                                    />
-                                    <div class="text-wrapper-4">
-                                        Eligibility
-                                    </div>
-                                </div>
-                                <p class="final-year-or">
-                                    Final year students or Graduates, All
-                                    degrees
-                                </p>
-                            </div>
-                            <img
-                                class="line"
-                                src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/line-2-5.svg"
-                            />
-                            <div class="frame">
-                                <div class="frame-2">
-                                    <img
-                                        class="img-2"
-                                        src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/frame-13.svg"
-                                    />
-                                    <div class="text-wrapper-4">Duration</div>
-                                </div>
-                                <div class="text-wrapper-3">12 Months</div>
-                            </div>
-                            <img
-                                class="line"
-                                src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/line-2-5.svg"
-                            />
-                            <div class="frame">
-                                <div class="frame-2">
-                                    <img
-                                        class="img-2"
-                                        src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/frame-14.svg"
-                                    />
-                                    <div class="text-wrapper-4">
-                                        Daily Effort
-                                    </div>
-                                </div>
-                                <div class="text-wrapper-3">5-7 hours</div>
-                            </div>
-                            <img
-                                class="line"
-                                src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/line-2-5.svg"
-                            />
-                            <div class="frame">
-                                <div class="frame-2">
-                                    <img
-                                        class="img"
-                                        src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/material-symbols-skip-next-outline-5.svg"
-                                    />
-                                    <div class="text-wrapper-4">
-                                        Next Batch On
-                                    </div>
-                                </div>
-                                <div class="text-wrapper-3">27th Dec 2022</div>
-                            </div>
-                        </div>
-                        <div class="title-2">
-                            <div class="div">
-                                <img
-                                    class="img-3"
-                                    src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/sapling-icon-2.svg"
-                                />
-                                <div class="text-wrapper-5">Beginner</div>
-                            </div>
-                            <div class="frame-3">
-                                <div class="div-wrapper">
-                                    <div class="text-wrapper-6">
-                                        100% Job Gaurantee
-                                    </div>
-                                </div>
-                                <div class="div-wrapper">
-                                    <div class="text-wrapper-6">
-                                        Lifetime Access
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="p">
-                                For you to start their coding journey from
-                                scratch
-                            </p>
-                        </div>
-                        <div class="frame-4">
-                            <div class="CTA-button">
-                                <img
-                                    class="img"
-                                    src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/frame-15.svg"
-                                />
-                                <div class="text-wrapper-7">Brochure</div>
-                            </div>
-                            <div class="CTA-button">
-                                <!-- <img
-                          class="img"
-                          src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/frame-15.svg"
-                        /> -->
-                                <div class="text-wrapper-7">Learn More</div>
-                            </div>
-                            <button class="button">
-                                <div class="placement-report">Learn More</div>
-                                <img
-                                    class="img"
-                                    src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/frame-16.svg"
-                                />
-                            </button>
-                        </div>
-                    </div>
-                    <div class="pioneer-card">
-                        <div class="title-3">
-                            <div class="div">
-                                <img
-                                    class="img-3"
-                                    src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/frame-23.svg"
-                                />
-                                <div class="text-wrapper-5">Intermediate</div>
-                            </div>
-                            <div class="frame-3">
-                                <div class="frame-5">
-                                    <div class="text-wrapper-8">
-                                        Pay After Placement
-                                    </div>
-                                </div>
-                                <div class="frame-5">
-                                    <div class="text-wrapper-8">
-                                        Lifetime Access
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="p">
-                                For learners with good aptitude &amp; logical
-                                reasoning
-                            </p>
-                        </div>
-                        <div class="frame-4">
-                            <div class="CTA-button">
-                                <img
-                                    class="img"
-                                    src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/frame-22.svg"
-                                />
-                                <div class="text-wrapper-7">Brochure</div>
-                            </div>
-                            <div class="CTA-button">
-                                <!-- <img
-                          class="img"
-                          src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/frame-15.svg"
-                        /> -->
-                                <div class="text-wrapper-7">Learn More</div>
-                            </div>
-                            <button class="button">
-                                <div class="placement-report">Learn More</div>
-                                <img
-                                    class="img"
-                                    src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/frame-21.svg"
-                                />
-                            </button>
-                        </div>
-                        <div class="details">
-                            <div class="frame">
-                                <div class="div">
-                                    <img
-                                        class="img"
-                                        src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/frame-20.svg"
-                                    />
-                                    <div class="text-wrapper-2">
-                                        Placement Starts
-                                    </div>
-                                </div>
-                                <div class="text-wrapper-3">in 6 Months</div>
-                            </div>
-                            <img
-                                class="line"
-                                src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/line-2-5.svg"
-                            />
-                            <div class="frame">
-                                <div class="frame-2">
-                                    <img
-                                        class="img-2"
-                                        src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/mdi-graduation-cap-outline-5.svg"
-                                    />
-                                    <div class="text-wrapper-4">
-                                        Eligibility
-                                    </div>
-                                </div>
-                                <p class="text-wrapper-9">
-                                    2019-2023 Batch students, All Degrees
-                                </p>
-                            </div>
-                            <img
-                                class="line"
-                                src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/line-2-5.svg"
-                            />
-                            <div class="frame">
-                                <div class="frame-2">
-                                    <img
-                                        class="img-2"
-                                        src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/frame-19.svg"
-                                    />
-                                    <div class="text-wrapper-4">Duration</div>
-                                </div>
-                                <div class="text-wrapper-3">10 Months</div>
-                            </div>
-                            <img
-                                class="line"
-                                src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/line-2-5.svg"
-                            />
-                            <div class="frame">
-                                <div class="frame-2">
-                                    <img
-                                        class="img-2"
-                                        src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/frame-18.svg"
-                                    />
-                                    <div class="text-wrapper-4">
-                                        Daily Effort
-                                    </div>
-                                </div>
-                                <div class="text-wrapper-3">8-10 hours</div>
-                            </div>
-                            <img
-                                class="line"
-                                src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/line-2-5.svg"
-                            />
-                            <div class="frame">
-                                <div class="frame-2">
-                                    <img
-                                        class="img"
-                                        src="https://generation-sessions.s3.amazonaws.com/bedf5492de5c65fc40b65ce6275d4b73/img/material-symbols-skip-next-outline-5.svg"
-                                    />
-                                    <div class="text-wrapper-4">
-                                        Next Batch On
-                                    </div>
-                                </div>
-                                <div class="text-wrapper-3">27th Dec 2022</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="secoundlast d-flex flex-column justify-content-between">
-            <div class="partone pt-5">
-                <div id="firstlin">Over 300+ hiring partners</div>
-                <div id="secondline">
-                    Top Startups &amp; MNC's Hire <br /><span id="soft"
-                        >Software Engineer</span
-                    >
-                </div>
+        <div class="footer-last">
+          “Blinkit” is owned & managed by "Blink Commerce Private Limited"
+          (formerly known as Grofers India Private Limited) and is not related,
+          linked or interconnected in whatsoever manner or nature, to
+          “GROFFR.COM” which is a real estate services business operated by
+          “Redstone Consultancy Services Private Limited”.
+        </div>
+        <div class="made-1 d-flex justify-content-center align-items-center "> Made with ❤️</div>
+    </div>
+    </footer>
 
-                <div id="lastline">From AccioJob upto 41 Lakhs</div>
-            </div>
-            <div class="compny d-flex flex-column pt-5 pl-3 pr-5">
-                <div
-                    class="imgline1 d-flex flex-row justify-content-between pt-4"
-                >
-                    <div class="imag">
-                        <img
-                            width="120px"
-                            height="40px"
-                            src="https://s3-alpha-sig.figma.com/img/d85a/692e/38df2c57ef3c2afa6dd5bc4140e91e92?Expires=1694390400&amp;Signature=GIAdOvBvnNCE99CM3wHq2x4Bpw4E~FqK5NREF4VYQY9pHbrmSSP4e1f8jEQ-~xMq4Geq1WFZua1dfxQ4w~Kxhw2itOc8WMj8s6zJeEzMdXUSyefkzNY6KzXvSx5DmPyjD9JH4vkNqRidA7~6D-G47V0xqGz-HLxNbtlVEAWjK1AkM5I5xKDNAR6r91sDXSwfUiSJ5WxbtAsJ8ViZr6IyD8mBDamcr4vlJTH8D27bi9oL1qAGV6EuvOJGNGNKp5b16mZ9qC~LRo3pGbDE-59TcpaOxOj7wOtlrwiRUoppkF9mAwuA-qm9niXVvTl36uhvHi5kpO4sEaMjh~XOEpiXhQ__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                            alt="logo"
-                        />
-                    </div>
-                    <div class="imag">
-                        <img
-                            width="120px"
-                            height="40px"
-                            src="https://s3-alpha-sig.figma.com/img/c61d/47f1/fc2dbdb3d8b36c3c329b98dfa01f9a65?Expires=1694390400&amp;Signature=l36r9CUXIv4KVqiktdDpgjjnkHPcnYeiH-Pz8RAnFnmNNbxkpHsZb8EGAeUwBnalhMw7rnNNKB2E5sELcBuUMOz3ogg65HyuClExuQNuIJg~MrPPR3HoVuwfjwiHdlGgspPEKV0flGAZdG-k3YleOZO-SrRBRSaXcD5kuFsQ3gSstBcJKhOTEN7eTZeWEetouSldVAFXMFl9uj7uuT7vdJD5hrfay-ffZ-J7dOQWIFVfPG7EjzpWeXXNckdBVbl7HiVNfvUUjqF4hMs166mtPYHiYHsNejkzq20B~nkYIDbVe2fY1GrozhclSgFxJEF92T32xFQSy3JmFVJdPnssOw__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                            alt="logo"
-                        />
-                    </div>
-                    <div class="imag">
-                        <img
-                            width="120px"
-                            height="40px"
-                            src="https://s3-alpha-sig.figma.com/img/1f59/3158/f4dca3cf0ee98dae16ad1d9e51f7ff5b?Expires=1694390400&amp;Signature=C8uq6OFtPluT4JxWjFWuNvlT1mS3B10JAz8U~2SKinh7k5-FsUAcigVqy3s-9OrxArzpGZhM3FHuyvha7hTXxb5y7Wvjj1DfeXSmVb6VEXLg9Sx94Dt~9RJOVOTHxIS1bnIX8asBU6Gvxf2C0gHh~DeHHKIs1NBJZeqe-Q8vJAjqGJ0V5OZKLT~rQ7NOJ~vvx7bOgsm9xSn7uKIAt00YSZxstCKIOUYPapDI-70I9ddpi3AneDYXn2BDGnM8SzhFg9oSYll~tZhP6ZgBLnjKR~dAFnnh1PF22plR0K266K2a09tDCLj1Bg3X52bDnsZbOyasl1ARtoJfnUrkgBIDHA__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                            alt="logo"
-                        />
-                    </div>
-                    <div class="imag">
-                        <img
-                            width="120px"
-                            height="40px"
-                            src="https://s3-alpha-sig.figma.com/img/40da/10ca/9e7a0ecbbf2bfa082c06ad11f4ec5de4?Expires=1694390400&amp;Signature=pEyM92MAQoSuVoNKhLBZeHFbWv~3cbMk8U0Gs8A1YCSUvOwGkriLNdwLXU~zRm-fsLOXoMu7G9OAr~bCew7aSgIC1IgvsVQ4-0egE0jMvzd5ajEeOaQLlph-Bv5IKEAtHl3VyC0S5AgS8BPZCS4r3lFHnTP0WZkrAn31wGW5UZ4s64MLis6yEj9jkMg6hqk71Imf1eT0r0o3HyA0hYRR9tAvPvqV0LWiV7Veh7gZGRH9W6vHeixiNzEMmkKZdZJUPiAawI6f-tTrss08wk8xkG5Hs3fJo~DI~h1Xv00hU8ftNFwixWBdXTqHlSGubg0acDa6zPt5WXWNvvYKKcnnOQ__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                            alt="logo"
-                        />
-                    </div>
-                    <div class="imag">
-                        <img
-                            width="120px"
-                            height="40px"
-                            src="https://s3-alpha-sig.figma.com/img/f5ca/f95f/0eb073b510c6826b976fdadca6104fad?Expires=1694390400&amp;Signature=AcO61wzy2nLLlG7is~PMhQzoyGKY7L97Dkdiz0uPKdMyeJ5-aeahb8Qb2oPhv0bX6HgtUMmcNh~DYHkIG6rjpB6oDtrHXdUEFpVfgixXRJzydruKE93d-sqcGLscwiDUL1xUj2fV-hgnWDYEl9VTB4JO-8yxW8xcgwUb51nGZXWW1a5Rgz6cULx6VKHr4FE-xe36Cj2WedebBvzQbQ7v6Z81M5KDSnc7SZDhxiUAV5aa27hAVSeTl5ep21Wdc9m5dex5mOzE9LATGyXhO2DFG9oebpgEwsSPbJrQEiy~-DdGCap4TeOcrAShWt7EUrnugT70GjgjREJ1Uxey4CybUw__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                            alt="logo"
-                        />
-                    </div>
-                    <div class="imag">
-                        <img
-                            width="120px"
-                            height="40px"
-                            src="https://s3-alpha-sig.figma.com/img/8e40/f7a0/2acb61792f816903bfe347c279e861e8?Expires=1694390400&amp;Signature=ec~sNBPEMfK~OODlXlJNcDcIzvQiEv-KDsqEXeUfRgn-2ZfLDLzTW49Q1BDr784YjXP1EdemW06UdSuCvVboXSQBl0JBxGZKAlJRCmHbY9NLQ-Jg0EoMdoJfFgD1WnSJjNqYNQKRIMZ3TlUXtqdayszSI5OhkOHttueAL2IOHT-CubalWe6h~giX3Wk12xHRoK89HbxDv7mN3I6dp42iI46XrsGQ2WTC4bpk0gPYjZUrE4hf7N~ugtt~bjVAD5Mg8pm-i0UYXfCX0S28MgshNImHLv5Hg8iozUPTVesVT7T1TU2IJiQBjBzjuJoLDs6EJxZkZIfIGoTER9l1QGrTqQ__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                            alt="logo"
-                        />
-                    </div>
-                </div>
-                <br />
-                <div
-                    class="imgline2 d-flex flex-row justify-content-between align-items-center pt-4"
-                >
-                    <div class="imag">
-                        <img
-                            width="120px"
-                            height="40px"
-                            src="https://s3-alpha-sig.figma.com/img/0f01/b819/90083391cd0ef623236f477682f22cad?Expires=1694390400&amp;Signature=M9Gbz~JuHvD1dvZDbCUPDAzoNn-Xdr3vHpv9dpKV-4FiWEv0jgtyoYhTR5ppTfgmsJp16cQpaqwf0KmFkkQXl0PF5rCgpfYmnQReany129I0CE9wY0ZXpYm3IFqKapoVIKYqvvjUWWJjw7JcjWfuoIbwBi16-I53KSqmntSyYlRmUfKmrVxX3EjAME5vCueePNPI~thoM8k9GFMMibxxHQIPVj207Ra-c~fP05TdiWVu-IRcNJG1Kni0C~FoaJr1Ll5nQeuNEN5LRBIHV4kOR9DnY5r1z3xROveAsw0cYeC4UDDYqtsJt8KW4p1uuX51tjXqHITYbi100SoaaudROA__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                            alt="logo"
-                        />
-                    </div>
-                    <div class="imag">
-                        <img
-                            width="120px"
-                            height="40px"
-                            src="https://s3-alpha-sig.figma.com/img/486d/38ce/1751e13e90777646c1fb9698fb10ddc8?Expires=1694390400&amp;Signature=NE~co2RUfbwln~iQyux6cQRsSBvPaLdWAG0ONxkKRd64nc-mshsdr92-uSaFvf0OrHJtG~mHscMW1WjvFa3nqlFDAZXn07vaJqqejEYMhWHA2VT-nEGzB29LUW2SRAF9CTCr06M1M1TbO6nVbSeWyiyFs~yYey7dfciHpP4QWc7sg42u0qCCCiFA2LKEkXsSz0~~oYgfvejcT~1C-JwWdFkf~EfEvqUqXDNw00i1xXqH1-PPewuxp8D1N5lXsdZtpGpxHLkUN240EC-u-pgK9ZWBMrLTU2AS2W6-uZOa5SxVj62cVKhcMlUi9GPCM5VJazz5WbxF1TRFRakTdZuWkQ__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                            alt="logo"
-                        />
-                    </div>
-                    <div class="imag">
-                        <img
-                            width="120px"
-                            height="40px"
-                            src="https://s3-alpha-sig.figma.com/img/13b4/2285/3aef3ec745dcdccbda8793dd10d97564?Expires=1694390400&amp;Signature=IOsftru2uAjkggR8L99ty8R9ZbyMBwlp71DXQrPV2CVYjZU8H4bOVtu61irsUokGD9GREJW7pcLY3FNBXcVEYTBKPKB0cRo6yacECxXcbhgrv9Biesi9dX5X443ePRug9htrPEvip-FdpGlIZg0xY3VJV~y~xXXOFKicdQxaIkFQEaKi2mVo6tqxeh0PLLlvCac0EwILRe1wKV7uyyCdctucUcebgns~dn7UlYT7An3ngZMs5DLTGZloWMqaM00mARz-Q6aIZGNK9r4KbGkVvA6H8MC2Yg22IQDIRDlOfuiNnVcNV6TiST5cyhZF-es6zrBv3mjs3MU9zdLU3TkL5g__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                            alt="logo"
-                        />
-                    </div>
-                    <div class="imag">
-                        <img
-                            width="120px"
-                            height="40px"
-                            src="https://s3-alpha-sig.figma.com/img/341f/620d/863d55c602b9be9bb78a164d238cd1a5?Expires=1694390400&amp;Signature=fBZWeaAbGG~HVBOjgW5BX4RXDha~wycLFNs7ENmKacTwl9HcVm1A7jkjCBvAlrpTOCjv~alimk6KTRgQcFhmMkY89snNqrahtHnGYIrNZiCLhFxZy0rKSkGhZqklIfH0FE05Y~nUj-y6T5y~78AFNsoQfd89L2gHghkzfA9JBl5TL8nesPUXziujM1n399CeflZMeugdSfJw8d1DunBNkcMuENkndO9xdGUcsp7rYnOQvcZ89JfRXUQTunghLt6gcb~ZeaWy~TjUGJA5eqDg3HaCh241AkjmqWYIJnDoKnUqKMeMoy8Xsxh61KPf~t-oHiDIfAQF0yFEFyra~XepHA__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                            alt="logo"
-                        />
-                    </div>
-                    <div class="imag">
-                        <img
-                            width="120px"
-                            height="40px"
-                            src="https://s3-alpha-sig.figma.com/img/5292/d401/65a7c68f8c38236d1398a6207363a826?Expires=1694390400&amp;Signature=QAIBL8--~0ZTbr84UiQJN4OlroXwGDZX6DzOcW3POhcI52BXZHoTNPSSdyVFVNp-xkcjgnaKdBglxUNz1dEziVxTbB90WcFUJI~5bj75C~uNue0UIX~C~hvuAc05MFkFHR~StJd87A5kmfMm5kZKerfo5uXmqHp5db3P1XCqbNZrj4aiQGpUM4qLd8ypDa7-M-NlyNA5xrOf9JRg6YThb7kQTkKdeQDYxsDatYRMo~x2uvREFQscsWZvsPNZIzokJwyk4djmslmOCpoTDmjWFPcBOQn8OxwDhHXkUhjMJ7AD2Pt7FV3SO7l6WfBdHUTIBZi0F8rblTsfjBfecbe0Rg__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                            alt="logo"
-                        />
-                    </div>
-                    <div class="imag">
-                        <img
-                            width="120px"
-                            height="40px"
-                            src="https://s3-alpha-sig.figma.com/img/506f/9e59/fe18e04a31fada916199857ef44758b0?Expires=1694390400&amp;Signature=Hv10z27aJq2fFijNTYyv-0t479XgUMffzoVDi4JVPVYZOoE~AeSZYjnSz3EEAkKG39V-cFJCI5hg5vkM9AQ6ij6F-Rswn1bBdEoYTiGKmIs9RAmYeFoepfVhWhWlkw0TvqxniFiSNj686XYY0s4u2ZlK36g-1Q3AlfvUYpfsErbu0Y5SjRknCN7IlLZtOLBz6cfNMNBUy7DGFCf2soUmamx~fQwbGQANt27K1pr6gZJOjkKndebcNoGwV7cpkHa6MnAtw0xT956v8s5p1q96TlQ2H0e2T4qzsxnwkU9TLZksefub2lbECTM1J3q7ewXUCbhjFc8V5QFx6re2zCTcpg__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                            alt="logo"
-                        />
-                    </div>
-                </div>
-                <br />
-                <div
-                    class="imgline3 d-flex flex-row justify-content-between align-items-center pt-4"
-                >
-                    <div class="imag">
-                        <img
-                            width="120px"
-                            height="40px"
-                            src="https://s3-alpha-sig.figma.com/img/fd8b/5dca/e5ddfb627b19567a3c279bb4c1a2d23b?Expires=1694390400&amp;Signature=m54mQT4kh6IS4m5JbY1F51ckF3wQk33NgcctxcdpdMW-10zg155m6Q7~HiAWdNEJM1m5T7b7KLYULi75oO-kSEGTLTkfPgl8Vd7eYCLWtNC5Fl3fA1iY0D7VwpgmOoO3tWxbimNbNJMggP0zOCqTurnpVXn75FoMVl5XzU2oE2dGdUPMXTLEkXbDXMiQ3DfqA-KhCuAIwMpKk7kAdjz8wkkIaIEvrjrq7huueSBPiFkah487P4r7PNje3WtpK0rb8sQCCHQuOo4rh6pmCSrn0xV0rX5CufBKInVKu8iXDcnX8rtvzXuQ2lsvs26K11rlnLdzc1z7lmqkJlI5-rSY7w__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                            alt="logo"
-                        />
-                    </div>
-                    <div class="imag">
-                        <img
-                            width="120px"
-                            height="40px"
-                            src="https://s3-alpha-sig.figma.com/img/53c6/e9df/93beb9eeffd380075d08bca6bf9ad033?Expires=1694390400&amp;Signature=DoV32bvw0x9Unkd2XnaNXbQgO740jW1-rryzp-QNumjbnDpRgfzt4-1GwiHYdpZW7f9h1vbFv0Yc91KN7kr5NHfpPckF20ZF1upPpcydrQxV7CKungYm7I--zJs5r~Kq62B73ln5Ja2uabyTo-Fr42pxuNp055K1P~iQU-ljFEXByYs3Af~CmRLHIB0M2ZgoXDWIJwiNAKvsokSysMoC1t6AUTPv-r9fDzM6iaLMJXaJzMcpi8L-ddhGW5xRpqS-XgU9u8SNA6jLsFxoYraYx6w~eo7V6NG5-I5EfXeStOHnPzagjX1PTR2EJRLOTyVDNzN9h-~ssqn0OiqNVoz3pw__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                            alt="logo"
-                        />
-                    </div>
-                    <div class="imag">
-                        <img
-                            width="120px"
-                            height="40px"
-                            src="https://s3-alpha-sig.figma.com/img/86b6/f6cc/4e20fde588b3b7e395fdea3dee82d883?Expires=1694390400&amp;Signature=JDtG-KUdBfzwGnWWvjdiSbi4w5Bg875-oegsgaRMNjX8cBg7OOzNbWLZDiczMEoZFAam5ozl5dweUaeYskyZvsELUSdkViBWOg9osHPu8EmdYjJHFoJV7R2UYMb--UyBrhkeoQUPq0GjS8zo4EoLB4M5~FH1CAIEf-RvB-wFKQ9aiszuJ8Ra09ZfPtRk104rUF3k1mTxXNyc5HlEVEnlLsFlOnf6g6aFAvYngFr0WPYdb3yL1qyI149cRDDH5NsyYGt19QJ1PdNiw3nqa4E3go8F2IGHyKpDfnSaZ7d9z37lf0ouf~6QQTpJrpLVQz924q675keyxOggC1lBVcDh8Q__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                            alt="logo"
-                        />
-                    </div>
-                    <div class="imag">
-                        <img
-                            width="120px"
-                            height="40px"
-                            src="https://s3-alpha-sig.figma.com/img/692e/a363/8a1e3948fe42bb078fc5f4ad3819ab2e?Expires=1694390400&amp;Signature=aQEnOt1tpfqkuK4pS~imsB7pbeqj91a6b3Cwnrxh1UJ7XAE-FO4SR03ZyDFoqD4IvUDTBBba8cEqP05hxBCiep4nrmWIl-UmIfVTEq9QYFkDYF5Q1fcKw5D6cCtVxikAzAILi7J8L9QXapUGy-HzIiIQ8uzniDXRItpzagfWR~ta95Q8CaZY~aKGHTNJOlHG5w70m2H4XoAJj16BgLenGEZkAYjCKPAI2xlQFvm9GJniKW5l98bG1cZao5hXj-Ib7pNbhonfX64IH94xKGLMkek9xgDKZLRfpaIKiIRQ7cDM9-q-qTIAACoAc3oWVBCxm2oHpDeabNpuzgYS943BlA__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                            alt="logo"
-                        />
-                    </div>
-                    <div class="imag">
-                        <img
-                            width="120px"
-                            height="40px"
-                            src="https://s3-alpha-sig.figma.com/img/d0ce/2d13/9760bc605a6a22a206b31a37dd0f378c?Expires=1694390400&amp;Signature=Z3hQT6y5jEdUy9NR86WBcDo9TCDmxarI1Y3~Psl~i5QZYWgik6mcMzPmAVbaBZRnL1KEyjpfijgiKx9IHppENRivPAwNO6UXLiqKmVQp1calR0fgNhAMMQ~xCzYxBG3f~exTbLlmblKqk5knW7ltl2sa2Gv1BlQUvxjjHgqjhNZBvJu8zTJwLHyZhJrWQj86iFQi2tmSwKgxdTltDA4niryaayoQY~TtbURzrG6TyYdU0T7fcIJznaypF83ubvYMKMdh2eKMSV0CqD5GmZbtLdMDhqtmoAOqbg6c4Os43Oau5s87BxAEWIj1Uk8Njny1cLheTzVNAB1PWVF6By6aww__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                            alt="logo"
-                        />
-                    </div>
-                    <div class="imag">
-                        <img
-                            width="120px"
-                            height="40px"
-                            src="https://s3-alpha-sig.figma.com/img/c6e8/0f6b/ec7bbc76d31b3bc59816550814bacd65?Expires=1694390400&amp;Signature=iF-BUd0p7m99LA-Y00k0sezT1Vg1o3UTVSRQjzO4wM3I-IL36fh8abyrTxdCWc2oT0jOSBTweyGt5BcC4H1JFk0vrEWJaFNm8JeKmRjpJ-ScEZXqoM83RLirBbLyPu3FYrU1GYGWQPJupFhpesfIPi~6dhdsVp6yvtbRBO-mup9rVnhGyvWnLIAQFBJgIchLy-hpz8p-Nn5WXdqNozEvfsn8eqUrUzcxLnc8LZ1HoVZj0bO4efUBQ7pEYkAJVue6IYlYhwANsUkptL4sBRAvnvkFXVHApTwx7RWoq5J6MyodcR911fPlLaynQsT~hgtvkr-VXSRVDZaoUhLp2~kxrQ__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                            alt="logo"
-                        />
-                    </div>
-                </div>
-            </div>
-            <div
-                class="btn pt-5 d-flex flex-row justify-content-between align-items-center"
-            >
-                <button
-                    type="button"
-                    class="btn btn-primary align-items-center"
-                >
-                    Placement Report
-                </button>
-            </div>
-        </section>
-        <section class="footer">
-            <div class="footer">
-                <div id="frem">
-                    <div class="acciojob text-center">
-                        <h1 class="accio">AccioJob Wall Of Love</h1>
-                        <p class="text">Our Alumni Say it Best</p>
-                    </div>
-                    <div
-                        class="cardsection d-flex flex-row justify-content-around pt-5"
-                    >
-                        <div id="line1 flex-column pt-5 ">
-                            <div class="cardone card border" id="card1">
-                                <div class="pading">
-                                    <div
-                                        class="cardheader d-flex flex-row ustify-content-between"
-                                    >
-                                        <div class="cardheaderleft d-flex">
-                                            <div class="imgphoto">
-                                                <img
-                                                    id="icon"
-                                                    src="https://s3-alpha-sig.figma.com/img/5744/653c/d5778208133de1d43a97b8beacdaad35?Expires=1694390400&amp;Signature=SNbm93TKDpWKxWqZoY-DjeqX~dj5GwPq-c5OfgkVOT~rZKxQdw0sEueSszNDIFpQxUaWZe51Xp1gAi3d5x4WuPAghjIiGppr1AdvMkx5mHtYB53ivcJ5xJO9ixPjRX7S8caRsPSsoU7~0X2413VhKsAZYw1I0noREp7oE5DhSZTqs5Hk9lxDqA~kOnyg7hzicDCMSh7zSOFuuVFGvVjRiypmg6OAZ8si6HHRR9lMpVgQmFGgZAy-h8onE0qCOCw8o~HNSaCEvaAHhG8ogDpq74N7Mgml8Pd8oAJRHkvtVHeUONs9~3snV3qtJfvOfDaRvJMS5KVhaaSbtJE~NL5vTQ__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                                                    height="64px"
-                                                    width="64px"
-                                                    alt="photo"
-                                                />
-                                            </div>
-                                            <div class="about pl-3">
-                                                <h3 class="name">
-                                                    Virat Kohli
-                                                </h3>
-                                                <div
-                                                    class="profile text text-sm-left"
-                                                >
-                                                    SDE-II at Indian Cricket
-                                                    Board
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="cardheaderright pl-3">
-                                            <img
-                                                src="./LinkedIN.png"
-                                                alt="LinkedIN"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div class="content pt-2">
-                                        <p class="text-left text">
-                                            My Life changed when I became a part
-                                            of the AccioJob family. Before that
-                                            I was not able to score any
-                                            centuries. As soon as I joined
-                                            Accio, I hit a century against
-                                            Afganistan.
-                                        </p>
-                                    </div>
-                                    <div class="btm">
-                                        <p class="text">Jun 14, 2022</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <br />
-                            <div class="cardone card border" id="card2">
-                                <div class="pading">
-                                    <div
-                                        class="cardheader d-flex flex-row ustify-content-between"
-                                    >
-                                        <div
-                                            class="cardheaderleft d-flex flex-row"
-                                        >
-                                            <div class="imgphoto">
-                                                <img
-                                                    id="icon"
-                                                    src="https://s3-alpha-sig.figma.com/img/ef8e/525b/bae8bb1348dd82ce0023422b70cf33b6?Expires=1694390400&amp;Signature=XNp3p36fPP28U8F0dQ5F~uOyup5iT-ACprlpYao4jGH3OvH99cefvH-el~KKeDYomTUsg9E7dov-7EWcl6itXyx-FTo6owXQ~~F984YbYjfrxtGY~Cf~pS4eufIYyF-j8sWP7WaDMR-2E0dTi90~dThSDcpy7lTky1xWUO~CfNCmmkHsgaMEVFFG4rEusVcQt-dyLpSBJzqSyDJ8Zi32B2BsLRxOI4TlWze9TBRyokDAFva3NQbB10~Tp33Zn9c8vLQmO0A66qr7sfLoO8~P6mxdQbBRneeKbz4~V223~e5GAw5PQ~oa~l2WXsYwCBxIQ7nWqzQthFnKvL8EGBj5bg__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                                                    height="64px"
-                                                    width="64px"
-                                                    alt="photo"
-                                                />
-                                            </div>
-                                            <div class="about pl-3">
-                                                <h3 class="name">
-                                                    Rohit Sharma
-                                                </h3>
-                                                <div
-                                                    class="profile text text-sm-left"
-                                                >
-                                                    SDE-II at Indian Cricket
-                                                    Board
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="cardheaderright pl-3">
-                                            <img
-                                                src="./LinkedIN.png"
-                                                alt="LinkedIN"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div class="content pt-2">
-                                        <p class="text-left text">
-                                            My Life changed when I became a part
-                                            of the AccioJob family. Before that
-                                            I was not able to score any
-                                            centuries. As soon as I joined
-                                            Accio, I hit a century against
-                                            Afganistan. Then I got offers from
-                                            RCB for IPL as captain again. Bas ab
-                                            India World Cup Jeet jaye.
-                                        </p>
-                                    </div>
-                                    <div class="btm">
-                                        <p class="text">Jun 14, 2022</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="line2 flex-column justify-content-between">
-                            <div class="cardone card border" id="card3">
-                                <div class="pading">
-                                    <div
-                                        class="cardheader d-flex flex-row ustify-content-between"
-                                    >
-                                        <div
-                                            class="cardheaderleft d-flex flex-row"
-                                        >
-                                            <div class="imgphoto">
-                                                <img
-                                                    id="icon"
-                                                    src="https://s3-alpha-sig.figma.com/img/7090/cbd3/010f9887f042d6691e3ed5ea1bef7eb9?Expires=1694390400&amp;Signature=CS~4vNc6U4UtfIMYEm9S~DL050YRfaVL-zwFTaGBKI8O3blzPS858XI0BuAf-1uLqGgtiYN9wtu9pRk3pMFAqmfx5nqT01mPIvrj6DYajBlw26vsS7xXWWKiqTaI7hvHRLS3dnOv9HdGUhyX6Sbx5zuBktYdrFMMPW94OPMHuo--E2C3gr5qML~b5hY2csJHMuSZDQxyuRSV9s-9swvlR-VUF4mf~4vrK7jcD09yo~n6EejnWba1Urh9Q~6hnnD0b8rHGLfMWHeBRHc9n6KvGD4h-1sMzE3NBtpdpYh58I~P0M3BpHp-BHgVpSygH77moJtzNoB-dezYZ05g~polIA__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                                                    height="64px"
-                                                    width="64px"
-                                                    alt="photo"
-                                                />
-                                            </div>
-                                            <div class="about pl-3">
-                                                <h3 class="name">
-                                                    Ishan Kishan
-                                                </h3>
-                                                <div
-                                                    class="profile text text-sm-left"
-                                                >
-                                                    Intern at Indian Cricket
-                                                    Board
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="cardheaderright pl-3">
-                                            <img
-                                                src="./Quora.png"
-                                                alt="LinkedIN"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div class="content pt-2">
-                                        <p class="text-left text">
-                                            My Life changed when I became a part
-                                            of the AccioJob family. Before that
-                                            I was not able to score any
-                                            centuries. As soon as I joined
-                                            Accio, I hit a century against Afg
-                                            anistan. My Life changed when I
-                                            became a part of the AccioJob
-                                            family. Before that I was not able
-                                            to score any centuries. As soon as I
-                                            joined Accio, I hit a century
-                                            against Afganistan.
-                                        </p>
-                                    </div>
-                                    <div class="btm">
-                                        <p class="text">Jun 14, 2022</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <br />
-                            <div class="cardone card border" id="card4">
-                                <div class="pading">
-                                    <div
-                                        class="cardheader d-flex flex-row ustify-content-between"
-                                    >
-                                        <div
-                                            class="cardheaderleft d-flex flex-row"
-                                        >
-                                            <div class="imgphoto">
-                                                <img
-                                                    id="icon"
-                                                    src="https://s3-alpha-sig.figma.com/img/825a/d553/923e01a784243037b6f30234e7ff78bd?Expires=1694390400&amp;Signature=L2xHfyS9X~MQLB4r1uVxMYrzirvWkrQTWnr6Jd6HnM6Dle6ShchL38ok04tYpayrWp49J5N7aN1hAEnkA7b4ZgKbG8Zhs2atLNuX3pLmJ-GvHgmcrVa5Q6yFvwsFH-co9O9w8aZtS8EN~LlfkL8a6dYmDHRPdp8-WMOPjONHfBPJvCLxRR7Fgw6DvXv7wOF-OrppF7Pn6oRgIxeRa6zRtqNEF7KlC83oFwof2yeHEXR3JKFaib0swIQBfPmLJL156EXI1IL05gNmVyZlrxie0iJG0lJjLTVRc4JQ4omhgf4WogSYLhrZlooBSiXJSJ4quo03pqelgVWdt2tgBONxSg__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                                                    height="64px"
-                                                    width="64px"
-                                                    alt="photo"
-                                                />
-                                            </div>
-                                            <div class="about pl-3">
-                                                <h3 class="name">
-                                                    Sarfaraz Ahmed
-                                                </h3>
-                                                <div
-                                                    class="profile text text-sm-left"
-                                                >
-                                                    WK at Pak. Cricket Board
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="cardheaderright pl-3">
-                                            <img
-                                                src="./LinkedIN.png"
-                                                alt="LinkedIN"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div class="content pt-2">
-                                        <p class="text-left text">
-                                            Inshallah Boys Played well. My
-                                            answer also same Inshallah Boys!
-                                            Well done!
-                                        </p>
-                                    </div>
-                                    <div class="btm">
-                                        <p class="text">Jun 14, 2022</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="line3 flex-column justify-content-between">
-                            <div class="cardone card border" id="card5">
-                                <div class="pading">
-                                    <div
-                                        class="cardheader d-flex flex-row ustify-content-between"
-                                    >
-                                        <div
-                                            class="cardheaderleft d-flex flex-row"
-                                        >
-                                            <div class="imgphoto">
-                                                <img
-                                                    id="icon"
-                                                    src="https://s3-alpha-sig.figma.com/img/2743/1950/14d557080e1b6b18a22f9ec66cdee4ce?Expires=1694390400&amp;Signature=InLLFLaN4N~Us1SGPt0IqtHGqIfbpu4AIutZqV17D0HjRvHvoZZYo21N6Wx8evdT~P3xO1LdvMPKDnPjVGKek7xzd8sQooHLRmQjVsyiDHGea45quvQY97NSK1zIBrO0MYNsZoPninGswGRIZ-JYyyTIM8cvYDrpS6A88qx2Zt3R3Q8U-CmDn~HPjRK7asPoNHtAxpOOO6vE2xOxbRx~NeQVnt0rwadkqUH2QLVWNX2FWWR-~~T1Df7hTM3qLE9uf39BGjaiI5jA4VvDBEf75jPCJUxStbo8NeP30Ow7BnAHjHO1eEE6fWSuwp45ULxUzkIl5IpSzii9o8oFKehdWg__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                                                    height="64px"
-                                                    width="64px"
-                                                    alt="photo"
-                                                />
-                                            </div>
-                                            <div class="about pl-3">
-                                                <h3 class="name">
-                                                    Virender Sehwag
-                                                </h3>
-                                                <div
-                                                    class="profile text text-sm-left"
-                                                >
-                                                    SDE-IV at Indian Cricket
-                                                    Board
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="cardheaderright pl-3">
-                                            <img
-                                                src="./LinkedIN.png"
-                                                alt="LinkedIN"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div class="content pt-2">
-                                        <p class="text-left text">
-                                            My Life changed when I became a part
-                                            of the AccioJob family. Before that
-                                            I was not able to score any
-                                            centuries. As soon as I joined
-                                            Accio, I hit a century against
-                                            Afganistan. Then I got offers from
-                                            RCB for IPL as captain again. Bas ab
-                                            India World Cup Jeet jaye.
-                                        </p>
-                                    </div>
-                                    <div class="btm">
-                                        <p class="text">Jun 14, 2022</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <br />
-                            <div class="cardone card border" id="card6">
-                                <div class="pading">
-                                    <div
-                                        class="cardheader d-flex flex-row ustify-content-between"
-                                    >
-                                        <div
-                                            class="cardheaderleft d-flex flex-row"
-                                        >
-                                            <div class="imgphoto">
-                                                <img
-                                                    id="icon"
-                                                    src="https://s3-alpha-sig.figma.com/img/825a/d553/923e01a784243037b6f30234e7ff78bd?Expires=1694390400&amp;Signature=L2xHfyS9X~MQLB4r1uVxMYrzirvWkrQTWnr6Jd6HnM6Dle6ShchL38ok04tYpayrWp49J5N7aN1hAEnkA7b4ZgKbG8Zhs2atLNuX3pLmJ-GvHgmcrVa5Q6yFvwsFH-co9O9w8aZtS8EN~LlfkL8a6dYmDHRPdp8-WMOPjONHfBPJvCLxRR7Fgw6DvXv7wOF-OrppF7Pn6oRgIxeRa6zRtqNEF7KlC83oFwof2yeHEXR3JKFaib0swIQBfPmLJL156EXI1IL05gNmVyZlrxie0iJG0lJjLTVRc4JQ4omhgf4WogSYLhrZlooBSiXJSJ4quo03pqelgVWdt2tgBONxSg__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                                                    height="64px"
-                                                    width="64px"
-                                                    alt="photo"
-                                                />
-                                            </div>
-                                            <div class="about pl-3">
-                                                <h3 class="name">
-                                                    Sachin Tendulkar
-                                                </h3>
-                                                <div
-                                                    class="profile text text-sm-left"
-                                                >
-                                                    God at Indian Cricket Board
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="cardheaderright pl-3">
-                                            <img
-                                                src="./LinkedIN.png"
-                                                alt="LinkedIN"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div class="content pt-2">
-                                        <p class="text-left text">
-                                            My Life changed when I became a part
-                                            of the AccioJob family. Before that
-                                            I was not able to score any
-                                            centuries. As soon as I joined
-                                            Accio, I hit a century against
-                                            Afganistan.
-                                        </p>
-                                    </div>
-                                    <div class="btm">
-                                        <p class="text">Jun 14, 2022</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <script
-            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
